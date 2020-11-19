@@ -76,6 +76,8 @@ const redirectableResources = new Map([
     [ 'empty', {
         data: 'text',   // Important!
     } ],
+    [ 'empty.json', {
+    } ],
     [ 'google-analytics_analytics.js', {
         alias: 'google-analytics.com/analytics.js',
     } ],
@@ -135,10 +137,16 @@ const redirectableResources = new Map([
         alias: 'noopjs',
         data: 'text',
     } ],
+    [ 'noop.json', {
+    } ],
     [ 'noop.txt', {
         alias: 'nooptext',
         data: 'text',
     } ],
+    [ 'noop.xml', {
+        alias: 'empty.xml',
+    } ],
+    [ 'noop.txt', {
     [ 'outbrain-widget.js', {
         alias: 'widgets.outbrain.com/outbrain.js',
     } ],
@@ -162,10 +170,12 @@ const extToMimeMap = new Map([
     [  'gif', 'image/gif' ],
     [ 'html', 'text/html' ],
     [   'js', 'application/javascript' ],
+    [ 'json', 'application/json' ],
     [  'mp3', 'audio/mp3' ],
     [  'mp4', 'video/mp4' ],
     [  'png', 'image/png' ],
     [  'txt', 'text/plain' ],
+    [  'xml', 'text/xml' ],
 ]);
 
 const typeToMimeMap = new Map([
